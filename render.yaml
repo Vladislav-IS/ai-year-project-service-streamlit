@@ -1,9 +1,9 @@
 services:
-  # A Docker web service
+  # A Python web service
   - type: web
-    name: fastapi-example
+    name: ai-year-project-service-streamlit
     runtime: python
     plan: free
     autoDeploy: false
     buildCommand: pip install -r requirements.txt
-    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    startCommand: streamlit run 1_💻_Intro.py
